@@ -10,7 +10,7 @@ func TestAdd(t *testing.T) {
 	tests := []struct {
 		name string
 		expr string
-		want int
+		want int64
 	}{
 		{
 			"first test case",
