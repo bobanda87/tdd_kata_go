@@ -18,7 +18,7 @@ func Add(expr string) int64 {
 			delimiter = string(expr[delimiter_start+1 : delimiter_end])
 			expr = strings.Replace(expr, expr[0:delimiter_end+1], "", -1)
 		} else {
-			delimiter = string(expr[2])
+			delimiter = string(expr[delimiter_start])
 			expr = strings.Replace(expr, "//"+delimiter, "", -1)
 		}
 	}
